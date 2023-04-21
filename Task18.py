@@ -11,6 +11,10 @@ print(a)
 
 x = int(input("Введите искомое число: "))
 
-        
+module = abs(x - max(a))        
+for i in a:
+    if abs(x - i) < module:
+        module = abs(x - i)
+        closest_number = i
 
-print(F"Наиболее близкое к исходному числу {find_number}")        
+print(f"Наиболее близкое к исходному число {closest_number}")        
